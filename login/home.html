@@ -1,10 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-image: url(https://lh5.googleusercontent.com/p/AF1QipPtwlqLiQXpony_t_2ZghUIFNfuTVR_WOr0X_ir=w743-h429-n-k-no);
+            background-size: cover;
+            background-position: 0px -50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            padding: 40px 60px;
+            color: white;
+        }
+        header nav{
+            width: 55%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 26px;
+        }
+        header nav a{
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        header nav a::before{
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            background-color: white;
+            width: 0%;
+            height: 2.5px;
+            transition: .3s;
+        }
+        header nav a:hover::after{
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-$END$
+<header>
+    <h1>Logo</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Services</a>
+        <a href="login.html" >Login </a>
+    </nav>
+</header>
 </body>
 </html>
